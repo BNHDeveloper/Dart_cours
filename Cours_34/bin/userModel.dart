@@ -1,0 +1,39 @@
+class User {
+  // Properties
+  String? name;
+  String? email;
+  String? _password; // private variable 
+  int? age;
+
+  // Constructor
+  User(this.name, this.age, this.email);
+
+
+  String? get getPassword {
+    return _password;
+  }
+
+  set setPassword(String password) {
+    _password = password;
+  }
+}
+
+class Women extends User{ 
+  String gender = "F";
+  Women(super.name, super.age, super.email);
+
+  String get getGender => "F";
+  set setGender(String gender){
+    this.gender="M";
+  }
+}
+class Men extends User{
+  String gender = "M";
+  Men(super.name, super.age, super.email);
+  String get getGender => "M";
+  set setGender(String gender){
+    this.gender="M";
+  }
+}
+
+
