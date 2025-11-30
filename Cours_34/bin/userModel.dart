@@ -29,7 +29,7 @@ class Women extends User{
 }
 class Men extends User{
   String gender = "M";
-  Men(super.name, super.age, super.email);
+  Men(name,age,email):super(name,age,email);
   String get getGender => "M";
   set setGender(String gender){
     this.gender="M";
